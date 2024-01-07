@@ -1,0 +1,134 @@
+@media (max-width: 991px){
+ .teamInfo::before {
+  bottom: -10%;
+}
+}
+
+
+@media (max-width: 736px){
+
+ .teamInfo::before {
+
+    }
+    bottom: -7%;
+
+}
+@media (max-width: 568px){
+ .teamInfo::before {
+  bottom: -7% !important;
+}
+}
+@media only screen and (max-width:430px){
+    .search>input[type="text"]{
+        width: 150px !important;
+    }
+    .sectionProductInfo>h4{
+        text-align: center;
+    }
+    .sectionProductCart>a{
+        padding: 10px 15px;
+    }
+    .teamInfo::before {
+        bottom: -10%;
+      }
+}
+@media only screen and (max-width:670px){
+    .topNav{
+        flex-direction: column;
+    }
+    .search>input[type="text"]{
+        width: 250px;
+    }
+    .search>input[type="submit"]{
+        padding: 0px 5px;
+    }
+    .search>button{
+        margin-left: 2px;
+    }
+    .banner{
+        height: auto;
+    }
+    .bannerright{
+        text-align: center;
+    }
+    .bannerright>picture>img{
+        width: 80%;
+    }
+    .rightSection{
+        width: 60%;
+        margin: 0px auto;
+    }
+    .heroSection{
+        flex-direction: column;
+    }
+    .heroImg{
+        width: 100%;
+        margin: 35px 0px;
+        padding: 0px !important;
+    }
+    .heroImg>picture>img{
+        width: 100%;
+    }
+    
+} 
+@media only screen and (max-width:770px){
+    .teamImg>img{
+        width: 15% !important;
+    }
+    
+    .resMargin{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width:980px){
+    .topHeader{
+        flex-direction: column;
+    }
+    .numberSection{
+        margin: 10px 0px;
+    }
+    .header-search{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    .search{
+        flex-basis: 0px;
+    }
+    .divideSection{
+        grid-template-columns: 1fr;
+    }
+    .productSectionOne{
+        display: flex;
+    flex-direction: column;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .parallexOverlay{
+        flex-direction: column;
+    }
+    .parallexLeft{
+        margin: 25px auto;
+        width: 50%;
+    }
+    .deliverySection{
+        flex-direction: column;
+    }
+    .shipping,.delivery,.choice{
+        margin: 20px 0px;
+    }
+    .footerMainSection{
+        flex-direction: column;
+    }
+    .footerMidLinks>ul>li>a{
+        padding-left: 0.5rem !important;
+    }
+    
+} 
+@media only screen and (max-width:1200px){
+    
+}

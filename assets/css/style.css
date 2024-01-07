@@ -1,0 +1,962 @@
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;}
+:root{
+    --bg_color: #0879c9;
+    --text_color:#0879c9;
+
+    --bg_warning:#f45c5d;
+    --text_warning:#f45c5d;
+
+    --bg_white:#fff;
+    --text_white:#fff;
+
+    --bg_black:#000000;
+    --text_black:#000000;
+
+    --main_family:'Roboto', sans-serif;
+    --child_family:'Montserrat', sans-serif;
+
+
+}
+/* =================== Our Top Nav Section CSS Start ========================= */
+
+/* =================== Our Top Search Section Start ========================= */
+.topHeader{
+    background-color: var(--bg_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.numberSection>span{
+    color: var(--text_white);
+    font-family: var(--child_family);
+    letter-spacing: 1px;
+}
+.topNav{
+    display: flex;
+    margin-bottom: 0px;
+    
+}
+.topNav>li{
+    list-style: none;
+}
+.topNav>li>a{
+    color: var(--text_white);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.topNav>li>a:hover{
+    opacity: .8;
+}
+#menuHover:hover{
+    opacity: 1 !important;
+    cursor: auto;
+}
+ /* =================== Our Top Nav Section CSS End ========================= */
+
+/* =================== Our Top Search Section CSS Start ========================= */
+.header-search{
+    background-color: var(--bg_white);
+    display: flex;
+    padding: 0px 35px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo>span{
+    font-size: 30px;
+font-weight: 700;
+font-family: var(--main_family);
+text-transform: capitalize;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 850px;
+}
+.search>input[type="text"]{
+    height: 44px;
+margin-left: 35px;
+width: 100%;
+outline: none;
+border: 1px solid #d8d8d8;
+padding: 0px 10px;
+font-size: 20px;
+font-family: var(--child_family);
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+}
+.search>input[type="text"]:focus{
+    border-color: #80bdff;
+}
+.search>input[type="submit"]{
+    height: 44px;
+    padding: 0px 25px;
+    margin-left: 10px;
+    border: none;
+    font-family: var(--child_family);
+    cursor: pointer;
+    background-color: var(--bg_warning);
+    color: var(--text_white);
+}
+.search>button{
+    padding: 13px 18px;
+    margin-left: 30px; 
+background-color: var(--bg_black);
+border: none;
+color: var(--text_white);
+border-radius: 5px;
+cursor: pointer
+}
+
+/* =================== Our Top Search Section CSS End ========================= */
+
+
+.selectMenu{
+    padding: 15px 25px !important;
+}
+.selectMenu:focus{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7) !important;
+}
+.stickyHeader{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.navColor{
+    background-color:#f8f9fa;
+    text-transform: capitalize;
+}
+.menuWidth{
+    width: 500px;
+}
+.menuWidth>h4{
+    color: var(--text_color);
+}
+.dropDown>li{
+    list-style: none;
+}
+.dropDown>li>a{
+    color: #545454;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+.dropDown>li>a:hover{
+    color: var(--text_warning);
+}
+.menuColor{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+    letter-spacing: 1px;
+    font-family: var(--child_family);
+}
+.menuColor:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
+.Active{
+    color: var(--text_warning) !important;
+}
+
+/* =================== Our Main Menu Section CSS End ========================= */
+
+
+
+ /* =================== Our Slider Section CSS Start ========================= */
+
+.swiper {
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+.imageOverlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    padding: 0px 100px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.imageOverlay>.imageOverlaySecond{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px rgba(2, 2, 2, 0.43);
+}
+.imageOverlay>.imageOverlaySecond>p{
+    font-size: 30px;
+    font-family: var(--child_family);
+    text-shadow: 3px 5px 2px rgb(12, 12, 12);
+    letter-spacing: 4px;
+}
+.imageOverlay>.imageOverlaySecond>p>span{
+    font-weight: 600;
+    font-family: var(--main_family);
+    font-size: 45px;
+}
+.imageOverlay>.imageOverlaySecond>h2{
+    font-size: 70px;
+    font-family: var(--main_family);
+    text-shadow: 3px 8px 2px rgb(12, 12, 12);
+    letter-spacing: 4px;
+}
+.imageOverlay>.imageOverlaySecond>h2>span{
+    color: var(--text_warning);
+}
+.imageOverlay>.imageOverlaySecond>div>a{
+    background-color: var(--bg_color);
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    display: block;
+    
+}
+.imageOverlay>.imageOverlaySecond>div>a:hover{
+    background-color: var(--bg_warning);
+    opacity: .8;
+}
+
+  /* =================== Our Slider Section CSS End ========================= */
+
+
+  /* =================== Our Product Section CSS Start ========================= */
+
+  .sectionMainHeading{
+      text-align: center;
+      padding: 25px 0px;
+    }
+    .sectionMainHeading>h1{
+        color: #000000;
+    }
+    .sectionMainHeading>h1>span{
+        color: var(--text_color);
+        font-size: 50px;
+    }
+.divideSection{
+width: 95%;
+margin: 0px auto;
+display: grid;
+grid-template-columns:  3fr 1fr;
+}
+.leftSection{
+    
+}
+.leftSection>h3{
+    font-family: var(--child_family);
+    color: #000000;
+    text-align: center;
+}
+.productSectionOne{
+    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    background-color: #ffffff;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.productSectionItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.sectionProductImageOverlay{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.sectionProductImageOverlay>a{
+    background-color: var(--bg_color);
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+.sectionProductImageOverlay>a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.productSectionItem:hover .sectionProductImageOverlay{
+    opacity: 1;
+    top: 48%;
+}
+.sectionProductInfo{
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionProductInfo>h4>a{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: #000000;
+    transition: all .2s ease;
+}
+.sectionProductInfo>h4>a:hover{
+    opacity: .8;
+}
+.sectionProductInfoPrice>del{
+    text-decoration: line-through;
+}
+.sectionProductInfoPrice>.priceColor{
+    color: var(--text_warning);
+    text-decoration: none;
+}
+.sectionProductCart>a{
+    display: block;
+    background: var(--bg_color);
+    color: var(--text_white);
+    padding: 10px 45px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .2s ease;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
+    letter-spacing: 1px;
+}
+.sectionProductCart>a:hover{
+    background-color: var(--text_black);
+}
+.banner{
+    width: 98%;
+    height: auto;
+    background: #F45C5D;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+}
+.bannerleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerleft>h3{
+    color: white;
+    font-size: 45px;
+}
+.bannerleft>p{
+    position: absolute;
+    right: 47%;
+    bottom: 42%;
+    font-size: 31px;
+    font-weight: 800;
+    color: rgba(10, 10, 10, 0.38);
+    transform: rotate(-64deg);
+    opacity: .9;
+}
+.bannerright{
+}
+
+
+.rightSection{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.searchRight{
+    display: flex;
+
+    flex-direction: column;
+    border-bottom: 1px solid #dee2e6;
+}
+.searchRight>h5{
+    color: var(--text_warning);
+    letter-spacing: 1px;
+}
+.searchRight>form>input[type="search"]:focus{
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+.searchRight>form>button{
+    background-color: var(--bg_warning);
+    border: none;
+    color: var(--text_white);
+    transition: all .2s ease-in-out;
+}
+.searchRight>form>button:hover{
+    background-color: var(--bg_color);
+}
+.price,
+.discount,
+.rating,
+.electronics{
+    border-bottom: 1px solid #dee2e6;
+}
+.price>h5{
+    color: var(--text_warning);
+    letter-spacing: 1px;
+}
+.price>ul,
+.discount>ul,
+.rating>ul,
+.electronics>ul{
+    padding: 0px;
+}
+.price>ul>li{
+    list-style: none;
+    margin: 3px 0px;
+}
+.price>ul>li>a{
+    text-decoration: none;
+    color: var(--text_black);
+    opacity: .8;
+    letter-spacing: 1px;
+}
+
+.discount>h5,
+.rating>h5,
+.electronics>h5{
+    color: var(--text_warning);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.discount>ul>li{
+    list-style: none;
+}
+.discount>ul>li>span{
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.rating>ul>li{
+    list-style: none;
+}
+.rating>ul>li>a{
+    text-decoration: none;
+    color: var(--text_black);
+    opacity: .6;
+}
+.rating>ul>li>a>span{
+    margin-left: 5px;
+}
+.rating>ul>li>a:hover{
+    color: #FFC107;
+    opacity: 1;
+}
+.spanColor{
+    color: var(--text_black) !important;
+}
+
+.electronics>ul>li{
+    list-style: none;
+    margin: 4px 0px;
+}
+.electronics>ul>li>span{
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+   /* =================== Our Product Section CSS End ========================= */
+
+      /* =================== Our Parallex Section CSS Start ========================= */
+
+
+.parallex{
+    background: url('../images/sectionImages/banner/parallex.jpg');
+    background-attachment: fixed;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    padding: 100px 0px !important;
+}
+.parallexOverlay{
+    width: 95%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.parallexOverlay>.parallexLeft{
+    background: #efedee;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.parallexImage>picture>img{
+    height: 200px;
+    width: 90%;
+}
+.parallexColor{
+    color: var(--text_warning);
+    font-weight: 600;
+}
+.parallexContent>h5{
+    font-weight: 700;
+    font-size: 20px;
+}
+.parallexContent>p{
+    font-size: 16px;
+}
+
+      /* =================== Our Parallex Section CSS End ========================= */
+      /* =================== Our Footer Section CSS Start ========================= */
+
+.desc{
+    
+}
+.desc>h3{
+    font-weight: 600;
+}
+.desc>p{
+    line-height: 1.6rem;
+    color: #383737;
+}
+.deliverySection{
+    display: flex;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+.shipping,.delivery,.choice{
+    flex-grow: 1;
+    display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.shippingIcon{
+    font-size: 2.5em;
+    color: var(--text_color);
+}
+.shippingInfo>h5{
+    color: black;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.shippingInfo>p{
+    color: #999;
+    letter-spacing: 2px;
+}
+.footerMainSection{
+    background: #333;
+    display: flex;
+justify-content: space-between;
+}
+.categories>h4{
+    color: var(--text_white);
+    font-weight: 600;
+}
+.categories>ul{
+    padding: 0px;
+}   
+.categories>ul>li{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.categories>ul>li>a{
+    color: #bdbdbd;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.categories>ul>li>a:hover{
+    color: #F45C5D;
+}
+.categories>ul>li>a>i{
+    color: #f45c5d;
+padding-right: 10px;
+}
+.footerNoHover>a:hover{
+    color: #bdbdbd !important;
+    cursor: auto;
+}
+.categories>form>input[type="search"]:focus{
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+.categories>form>button{
+    background-color: var(--bg_warning);
+    border: none;
+    color: var(--text_white);
+    transition: all .2s ease-in-out;
+}
+.categories>p{
+    color: #bdbdbd;
+    letter-spacing: 1px;
+}
+.categories>form>button:hover{
+    background-color: var(--bg_color);
+}
+
+.footerLinks{
+    padding: 0px;
+}
+.footerLinks>#footerNavLinks{
+    display: inline-block;
+    margin: 0px;
+}
+.footerMidLinks>h3{
+    font-size: 19px;
+color: #696969;
+letter-spacing: 1px;
+font-weight: 700;
+}
+.footerMidLinks>ul{
+    display: flex;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+.footerMidLinks>ul>li{
+    list-style-type: none;
+    display: inline-block;
+}
+.footerMidLinks>ul>li>a{
+    text-decoration: none;
+    border-right: 1px solid #dee2e6 !important;
+    padding-right: 0.5rem !important;
+    font-size: 15px;
+color: #999;
+padding-left: 0.5rem;
+}
+.footerLastSection{
+    background-color: var(--bg_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_white);text-transform: capitalize;
+}
+.footerLastSection>p{
+    margin-bottom: 0px;
+    font-size: 1.2em;
+}
+#scrollToTop{
+    background-color: var(--bg_warning);
+    color: var(--text_white);
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+ /* =================== Our Footer Section CSS End ========================= */
+
+/* =================== Our About Us Page CSS Start ========================= */
+
+.aboutSlider{
+    background: url('../images/other/b1.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+}
+.servicesBreadCrumb{
+    background: #eee;
+}
+.servicesBreadCrumb>ul{
+    display: flex;
+    text-transform: capitalize;
+}
+.firstLinks{
+    margin: 0px 5px;
+    border-right: 2px solid #999;
+    padding-right: 18px;
+}
+.servicesBreadCrumb>ul>li{
+    list-style: none;
+    font-weight: 700;
+    margin: 0px 8px;
+}
+.servicesBreadCrumb>ul>li>a{
+    color: var(--text_warning);
+    text-decoration: none;
+}
+section>h2{
+    color: var(--text_black);
+    font-weight: 600;
+}
+section>h2>span{
+    color: var(--text_color);
+    font-size: 40px;
+}
+.heroSection{
+    display: flex;
+    text-align: left;
+}
+.heroSection>.heroInfo{
+}
+.heroSection>.heroInfo>h3{
+    color: var(--text_warning);
+    font-size: 35px;
+}
+.heroSection>.heroInfo>h4{
+    color: #464646;
+font-size: 17px;
+line-height: 1.8;
+letter-spacing: 1px;
+}
+.heroSection>.heroInfo>p{
+    margin: 0;
+letter-spacing: 1px;
+font-size: 15px;
+line-height: 1.9;
+color: #999;
+}
+.heroImg{
+    width: 1800px;
+    
+}
+.heroImg>picture>img{
+    width: 100%;
+}
+
+/* =================== Our Team Section CSS Start ========================= */
+
+
+.teamParallex{
+    background: url('../images/about/bg2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.teamParallex>h3{
+    text-align: center;
+    color: var(--text_white);
+    font-weight: 600;
+    font-size: 40px;
+}
+.teamParallex>h3>Span{
+    color: var(--text_color);
+    font-size: 50px;
+}
+.teamInfo{
+    background-color: var(--bg_white);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.teamInfo::before{
+    content: '';
+    position: absolute;
+    left: 10%;
+    bottom: -13.1%;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 18px solid #f45c5d;
+    transform: rotate(180deg);
+}
+.teamInfo>p{
+    letter-spacing: 1px;
+font-size: 15px;
+line-height: 1.9;
+color: #999;
+margin: 0px;
+}
+.teamImg>img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.memberName{
+    font-weight: 600;
+}
+.memberName,.memberDesc{
+    color: white;
+    letter-spacing: 1px;
+}
+.ourInfo>h2{
+    font-weight: 600;
+}
+.ourInfo>h2>span{
+    color: var(--text_color);
+    font-size: 40px;
+}
+.ourContact{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.ourContact>i{
+    background: #fff;
+padding: 30px;
+border-radius: 50%;
+box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.3);
+box-shadow: 2px 1px 4px #00000061;
+font-size: 22px;
+}
+.ourContact>h4{
+    color: var(--text_color);
+    font-weight: 600;
+}
+.ourContact>p{
+    letter-spacing: 1px;
+font-size: 15px;
+line-height: 1.9;
+color: #999;
+display: flex;
+flex-direction: column;
+text-align-last: center;
+}
+
+.formBtn{background-color: var(--bg_color);
+padding: 10px 30px;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+color: white;
+border-radius: 5px;
+letter-spacing: 2px;
+display: block;
+}
+.formBtn:hover{
+    transition: all 0.3s ease-in-out;
+    background: var(--bg_warning);
+}
+
+
+/* =================== Our Team Section CSS End ========================= */
+
+
+/* =================== Our About Us Page CSS End ========================= */
+.singleProduct>h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+.singleProduct>h3>span{
+    font-size: 45px;
+    color: var(--text_color);
+}
+
+.Show {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .small-img {
+    width: 350px;
+    height: 70px;
+    margin-top: 10px;
+    position: relative;
+    left: 25px;
+  }
+  
+  .small-img .icon-left, .small-img .icon-right {
+    width: 12px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+  
+  .small-img .icon-left { transform: rotate(180deg) }
+  
+  .small-img .icon-right { right: 0; }
+  
+  .small-img .icon-left:hover, .small-img .icon-right:hover { opacity: .5; }
+  
+  .small-container {
+    width: 310px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  .small-container div {
+    width: 800%;
+    position: relative;
+  }
+  
+  .small-container .show-small-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 6px;
+    cursor: pointer;
+    float: left;
+  }
+  
+.small-container .show-small-img:last-of-type { margin-right: 0; }
+.pricePara{
+    font-size: 20px;
+    font-weight: 500;
+}
+.pricePara>span{
+    color: var(--text_warning);
+    margin-right: 8px;
+}
+.pricePara>del{
+    text-decoration: line-through;
+    margin-right: 8px;
+    color: #999;
+}
+.cashInfo{
+    padding: 0px;
+    border-bottom: 1px solid #0879c9;
+}
+.cashInfo>li{
+    list-style: none;
+}
+.warranty{
+    color: #000;
+letter-spacing: 0.5px;
+}
+.warranty>i{
+    font-size: 20px;
+    color: var(--text_color);
+}
+.productInformation{
+    padding: 0px;
+}
+.productInformation>li{
+    list-style: inside;
+font-size: 14px;
+line-height: 1.7;
+}
+.retweet{
+    color: #000;
+letter-spacing: 0.5px;
+}
+.retweet>i{
+    color: var(--text_color);
+    font-size: 20px;
+}
+
+
