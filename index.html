@@ -1,991 +1,1344 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>E-Commerece</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/layout.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/responsive.css"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>E-Commerece</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/responsive.css" />
+    <script src="main.js"></script>
+  </head>
 
-  <script src="main.js"></script>
-</head>
+  <body>
+    <header>
+      <!-- =========== Our Top Nav Section Start==========-->
 
-<body>
-
-  <header>
-
-    <!-- =========== Our Top Nav Section Start==========-->
-
-    <div class="topHeader px-3 py-2">
-      <div class="numberSection">
-        <span>Offer Zone Top Deals & Discounts <i class="fa-solid fa-cart-shopping"></i> </span>
-      </div>
-      <nav>
-        <ul class="topNav">
-          <li class="top-list"><a href="#"> <span><i class="fa-solid fa-location-pin"></i></span> Select Location</a></li>
-          &nbsp;&nbsp;&nbsp;
-          <li class="top-list"><a href="#"> <span><i class="fa-solid fa-truck"></i></span> Track Order</a></li>
-          &nbsp;&nbsp;&nbsp;
-          <li class="topList"><a href="#" id="menuHover"> <span><i class="fa-solid fa-phone"></i></span> 001 234 5678</a></li>
-          &nbsp;&nbsp;&nbsp;
-          <li class="top-list"><a href="#"> <span><i class="fa-solid fa-right-to-bracket"></i></span> Log In</a></li>
-          &nbsp;&nbsp;&nbsp;
-          <li class="top-list"><a href="#"> <span><i class="fa-solid fa-right-to-bracket"></i></span> register</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <!-- =========== Our Top Nav Section End==========-->
-
-    <!-- =========== Our Top Search Section Start  ==========-->
-
-    <div class="header-search">
-      <div class="logo">
-        <img src="assets/images/logo/logo.png" alt="">
-        <span>electro store</span>
-      </div>
-      <div class="search">
-
-        <input type="text" placeholder="Search" />
-        <input type="submit" value="Search">
-
-        <button>
-          <i class="fa-solid fa-cart-arrow-down"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- =========== Our Top Search Section End==========-->
-
-    <!-- =========== Our Main Menu Section Start==========-->
-
-    <div class="container-fluid navColor" id="mainHeader">
-      <div class="row">
-
-        <div class="col-md-2 d-flex justify-content-center align-items-center">
-          <select class="selectMenu form-select form-select-sm" aria-label=".form-select-sm example">
-            <option selected>All Categories</option>
-            <option value="1">Televisions</option>
-            <option value="2">Headphones</option>
-            <option value="3">Computers</option>
-            <option value="3">Appliances</option>
-            <option value="3">Mobiles</option>
-            <option value="3">TV & Video</option>
-            <option value="3">iPad & Tablets</option>
-            <option value="3">Cameras & Camcorders</option>
-            <option value="3">Home Audio & Theater </option>
-          </select>
-
+      <div class="topHeader px-3 py-2">
+        <div class="numberSection">
+          <span
+            >Offer Zone Top Deals & Discounts
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
         </div>
-        <div class="col-md-10">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid py-2">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav>
+          <ul class="topNav">
+            <li class="top-list">
+              <a href="#">
+                <span><i class="fa-solid fa-location-pin"></i></span> Select
+                Location</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="top-list">
+              <a href="#">
+                <span><i class="fa-solid fa-truck"></i></span> Track Order</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="topList">
+              <a href="#" id="menuHover">
+                <span><i class="fa-solid fa-phone"></i></span> 001 234 5678</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="top-list">
+              <a href="#">
+                <span><i class="fa-solid fa-right-to-bracket"></i></span> Log
+                In</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="top-list">
+              <a href="#">
+                <span><i class="fa-solid fa-right-to-bracket"></i></span>
+                register</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- =========== Our Top Nav Section End==========-->
+
+      <!-- =========== Our Top Search Section Start  ==========-->
+
+      <div class="header-search">
+        <div class="logo">
+          <img src="assets/images/logo/logo.png" alt="" />
+          <span>electro store</span>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <input type="submit" value="Search" />
+
+          <button>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- =========== Our Top Search Section End==========-->
+
+      <!-- =========== Our Main Menu Section Start==========-->
+
+      <div class="container-fluid navColor" id="mainHeader">
+        <div class="row">
+          <div
+            class="col-md-2 d-flex justify-content-center align-items-center"
+          >
+            <select
+              class="selectMenu form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>All Categories</option>
+              <option value="1">Televisions</option>
+              <option value="2">Headphones</option>
+              <option value="3">Computers</option>
+              <option value="3">Appliances</option>
+              <option value="3">Mobiles</option>
+              <option value="3">TV & Video</option>
+              <option value="3">iPad & Tablets</option>
+              <option value="3">Cameras & Camcorders</option>
+              <option value="3">Home Audio & Theater</option>
+            </select>
+          </div>
+          <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid py-2">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item my-1">
+                      <a
+                        class="menuColor Active px-2"
+                        aria-current="page"
+                        href="index.html"
+                        >Home</a
+                      >
+                    </li>
+
+                    <!-- =========== Electronics Section Mega Menu Start==========-->
+
+                    <li class="nav-item my-1 dropdown">
+                      <a
+                        class="menuColor dropdown-toggle px-2"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Electronics
+                      </a>
+                      <ul class="dropdown-menu">
+                        <div class="container">
+                          <div class="row menuWidth">
+                            <h4 class="px-4 my-2">Mobiles, Computers</h4>
+                            <div class="col-md-6">
+                              <ul class="dropDown px-3">
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> All Mobile Phones </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    All Mobile Accessories
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Cases & Covers </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Screen Protectors </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Power Banks </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    All Certified Refurbished
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Tablets </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Wearable Devices </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Smart Home </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul class="dropDown px-3">
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Laptops </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Drives & Storage </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Printers & Ink </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Networking Devices </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    Computer Accessories
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Game Zone </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Software </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <!-- =========== Electronics Section Mega Menu End==========-->
+
+                    <!-- =========== Appliances Section Mega Menu Start==========-->
+
+                    <li class="nav-item my-1 dropdown">
+                      <a
+                        class="menuColor dropdown-toggle px-2"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Appliances
+                      </a>
+                      <ul class="dropdown-menu">
+                        <div class="container">
+                          <div class="row menuWidth">
+                            <h4 class="px-4 my-2">
+                              TV, Appliances, Electronics
+                            </h4>
+                            <div class="col-md-6">
+                              <ul class="dropDown px-3">
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Televisions </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    Home Entertainment Systems
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Headphones </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Speakers </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    MP3, Media Players & Accessories
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    Audio & Video Accessories
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Cameras </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> DSLR Cameras </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Camera Accessories </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul class="dropDown px-3">
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Musical Instruments </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Gaming Consoles </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> All Electronics </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Air Conditioners </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Refrigerators </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> Washing Machines </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    Kitchen & Home Appliances
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#">
+                                    Heating & Cooling Appliances
+                                  </a>
+                                </li>
+                                <li class="my-3 px-0">
+                                  <a class="" href="#"> All Appliances </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <!-- =========== Appliances Section Mega Menu End==========-->
+
+                    <li class="nav-item my-1 px-2">
+                      <a href="about.html" class="menuColor">About Us</a>
+                    </li>
+
+                    <li class="nav-item my-1 px-2">
+                      <a class="menuColor">New Arrivals</a>
+                    </li>
+
+                    <!-- =========== Pages Section Mega Menu Start==========-->
+
+                    <li class="nav-item my-1 dropdown">
+                      <a
+                        class="menuColor dropdown-toggle px-2"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="">
+                          <a class="dropdown-item" href="productone.html">
+                            product 1
+                          </a>
+                        </li>
+                        <li class="">
+                          <a class="dropdown-item" href="producttwo.html">
+                            product 2
+                          </a>
+                        </li>
+                        <li class="">
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li class="">
+                          <a class="dropdown-item" href="singleone.html"
+                            >single product 1</a
+                          >
+                        </li>
+                        <li class="">
+                          <a class="dropdown-item" href="singletwo.html">
+                            single product 2
+                          </a>
+                        </li>
+                        <li class="">
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li class="px-3">
+                          <a class="dropdown-item" href="#"></a> checkout page
+                        </li>
+                        <li class="px-3">
+                          <a class="dropdown-item" href="#"></a> payment page
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- =========== Pages Section Mega Menu End==========-->
+
+                    <li class="nav-item my-1 px-2">
+                      <a href="contact.html" class="menuColor">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========== Our Main Menu Section End==========-->
+    </header>
+
+    <!-- Slider section start -->
+
+    <section>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/slider/s1.jpg" alt="" />
+            <div class="imageOverlay">
+              <div class="imageOverlaySecond">
+                <p>advanced <span> Wireless </span> earbuds</p>
+                <h2>Best <span> Headphone </span></h2>
+                <div><a href="#" class="">shop now</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slider/s2.jpg" alt="" />
+            <div class="imageOverlay">
+              <div class="imageOverlaySecond">
+                <p>Get flat <span> 10% </span> Cashback</p>
+                <h2>The <span> Big </span> Sale</h2>
+                <div><a href="#" class="">shop now</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slider/s3.jpg" alt="" />
+            <div class="imageOverlay">
+              <div class="imageOverlaySecond">
+                <p>Get Now <span> 40% </span> Discount</p>
+                <h2>Today <span> Discount </span></h2>
+                <div><a href="#" class="">shop now</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slider/s4.jpg" alt="" />
+            <div class="imageOverlay">
+              <div class="imageOverlaySecond">
+                <p>Get flat <span> 10% </span> Cashback</p>
+                <h2>New <span> Standard </span></h2>
+                <div><a href="#" class="">shop now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- Slider section end -->
+
+    <!--======================== Our Product Section Start ===============================-->
+
+    <section class="py-5">
+      <div class="sectionMainHeading">
+        <h1><span> O</span>ur <span> N</span>ew <span> P</span>roducts</h1>
+      </div>
+      <div class="divideSection">
+        <div class="leftSection">
+          <!--======================== Our Mobile Product Section Start ===============================-->
+
+          <h3 class="my-3">New Brand Mobiles</h3>
+          <div class="productSectionOne py-5 px-4">
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m1.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="sectionProductImageOverlay">
+                <a href="" class="btn btn-danger">quick view</a>
+              </div>
+
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Samsung Galaxy J7</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$200.00</span> &nbsp;
+                  <del>$280.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m2.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">OPPO A37f</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$230.00</span> &nbsp;
+                  <del>$250.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m3.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Apple iPhone X</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$200.00</span> &nbsp;
+                  <del>$280.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--======================== Our Mobile Product Section End ===============================-->
+
+          <!--======================== Our Electronics Product Section Start ===============================-->
+
+          <h3 class="my-5">Tv & Audio</h3>
+          <div class="productSectionOne py-5 px-4">
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m4.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Sony 80 cm (32 inches)</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$320.00</span> &nbsp;
+                  <del>$340.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m5.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Artis Speaker</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$349.00</span> &nbsp;
+                  <del>$399.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m6.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Philips Speakers</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$249.00</span> &nbsp;
+                  <del>$300.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--======================== Our Electronics Product Section End ===============================-->
+
+          <!--======================== Our Discount Banner Section Start ===============================-->
+
+          <div class="banner my-5 py-5 px-4">
+            <div class="bannerleft px-5">
+              <h3>
+                Summer <br />
+                Carnival
+              </h3>
+              <p>Get Extra 10% Off</p>
+            </div>
+            <div class="bannerright">
+              <picture>
+                <img src="assets/images/sectionImages/banner/image1.png" />
+              </picture>
+            </div>
+          </div>
+
+          <!--======================== Our Discount Banner Section End ===============================-->
+
+          <!--======================== Our Appliances Product Section Start ===============================-->
+
+          <h3 class="my-5">Large Appliances</h3>
+          <div class="productSectionOne py-5 px-4">
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m7.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Whirlpool 245</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$230.00</span> &nbsp;
+                  <del>$280.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m8.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">BPL Washing Machine</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$180.00</span> &nbsp;
+                  <del>$200.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="productSectionItem">
+              <div class="sectionProductImage py-5">
+                <a href="#">
+                  <picture>
+                    <img
+                      src="assets/images/sectionImages/mobile/m9.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="sectionProductImageOverlay">
+                <a href="#" class="btn btn-danger">quick view</a>
+              </div>
+              <div class="sectionProductInfo">
+                <h4>
+                  <a href="#">Microwave Oven</a>
+                </h4>
+                <div class="sectionProductInfoPrice">
+                  <span class="priceColor">$199.00</span> &nbsp;
+                  <del>$299.00</del>
+                </div>
+                <div class="sectionProductCart py-3">
+                  <a href="#">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--======================== Our Appliances Product Section End ===============================-->
+        </div>
+        <div class="rightSection px-3">
+          <div class="searchRight py-3">
+            <h5>Search Here.</h5>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Product Name"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                  <li class="nav-item my-1">
-                    <a class="menuColor Active px-2" aria-current="page" href="index.html">Home</a>
-                  </li>
-
-                  <!-- =========== Electronics Section Mega Menu Start==========-->
-
-                  <li class="nav-item my-1 dropdown">
-                    <a class="menuColor dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Electronics
-                    </a>
-                    <ul class="dropdown-menu">
-                      <div class="container">
-                        <div class="row menuWidth">
-                          <h4 class="px-4 my-2">Mobiles, Computers</h4>
-                          <div class="col-md-6">
-                            <ul class="dropDown px-3">
-                              <li class="my-3 px-0"><a class="" href="#"> All Mobile Phones </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> All Mobile Accessories </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Cases & Covers </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Screen Protectors </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Power Banks </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> All Certified Refurbished </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Tablets </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Wearable Devices </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Smart Home </a></li>
-                            </ul>
-                          </div>
-                          <div class="col-md-6">
-                            <ul class="dropDown px-3">
-                              <li class="my-3 px-0"><a class="" href="#"> Laptops </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Drives & Storage </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Printers & Ink </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Networking Devices </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Computer Accessories </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Game Zone </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Software </a></li>
-
-                            </ul>
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </ul>
-                  </li>
-
-                  <!-- =========== Electronics Section Mega Menu End==========-->
-
-
-                  <!-- =========== Appliances Section Mega Menu Start==========-->
-
-                  <li class="nav-item my-1 dropdown">
-                    <a class="menuColor dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Appliances
-                    </a>
-                    <ul class="dropdown-menu">
-                      <div class="container">
-                        <div class="row menuWidth">
-                          <h4 class="px-4 my-2">TV, Appliances, Electronics</h4>
-                          <div class="col-md-6">
-                            <ul class="dropDown px-3">
-                              <li class="my-3 px-0"><a class="" href="#"> Televisions </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Home Entertainment Systems </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Headphones </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Speakers </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> MP3, Media Players & Accessories </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Audio & Video Accessories </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Cameras </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> DSLR Cameras </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Camera Accessories </a></li>
-                            </ul>
-                          </div>
-                          <div class="col-md-6">
-                            <ul class="dropDown px-3">
-                              <li class="my-3 px-0"><a class="" href="#"> Musical Instruments </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Gaming Consoles </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> All Electronics </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Air Conditioners </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Refrigerators </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Washing Machines </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Kitchen & Home Appliances </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> Heating & Cooling Appliances </a></li>
-                              <li class="my-3 px-0"><a class="" href="#"> All Appliances </a></li>
-                            </ul>
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </ul>
-                  </li>
-
-                  <!-- =========== Appliances Section Mega Menu End==========-->
-
-                  <li class="nav-item my-1 px-2">
-                    <a href="about.html" class="menuColor">About Us</a>
-                  </li>
-
-                  <li class="nav-item my-1 px-2">
-                    <a class="menuColor">New Arrivals</a>
-                  </li>
-
-                  <!-- =========== Pages Section Mega Menu Start==========-->
-
-                  <li class="nav-item my-1 dropdown">
-                    <a class="menuColor dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-
-                      <li class=""><a class="dropdown-item" href="productone.html"> product 1 </a></li>
-                      <li class=""><a class="dropdown-item" href="producttwo.html"> product 2 </a></li>
-                      <li class="">
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li class=""><a class="dropdown-item" href="singleone.html">single product 1</a> </li>
-                      <li class=""><a class="dropdown-item" href="singletwo.html"> single product 2 </a></li>
-                      <li class="">
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li class="px-3"><a class="dropdown-item" href="#"></a> checkout page </li>
-                      <li class="px-3"><a class="dropdown-item" href="#"></a> payment page </li>
-
-                    </ul>
-                  </li>
-
-                  <!-- =========== Pages Section Mega Menu End==========-->
-
-                  <li class="nav-item my-1 px-2">
-                    <a href="contact.html" class="menuColor">Contact Us</a>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- =========== Our Main Menu Section End==========-->
-
-  </header>
-
-
-  <!-- Slider section start -->
-
-  <section>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="assets/images/slider/s1.jpg" alt="">
-          <div class="imageOverlay">
-
-            <div class="imageOverlaySecond">
-              <p>advanced <span> Wireless </span> earbuds</p>
-              <h2>Best <span> Headphone </span> </h2>
-              <div><a href="#" class="">shop now</a></div>
-            </div>
-
+            </form>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/slider/s2.jpg" alt="">
-          <div class="imageOverlay">
-
-            <div class="imageOverlaySecond">
-              <p>Get flat <span> 10% </span> Cashback</p>
-              <h2>The <span> Big </span> Sale </h2>
-              <div><a href="#" class="">shop now</a></div>
-            </div>
-
+          <div class="price py-3">
+            <h5>Price</h5>
+            <ul>
+              <li><a href="#"> Under $1,000 </a></li>
+              <li><a href="#"> $1,000 - $5,000 </a></li>
+              <li><a href="#"> $5,000 - $10,000 </a></li>
+              <li><a href="#"> $10,000 - $20,000 </a></li>
+              <li><a href="#"> $20,000 $30,000 </a></li>
+              <li><a href="#"> Over $30,000 </a></li>
+            </ul>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/slider/s3.jpg" alt="">
-          <div class="imageOverlay">
-
-            <div class="imageOverlaySecond">
-              <p>Get Now <span> 40% </span> Discount</p>
-              <h2>Today <span> Discount </span> </h2>
-              <div><a href="#" class="">shop now</a></div>
-            </div>
-
+          <div class="discount py-3">
+            <h5>discount</h5>
+            <ul>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> 5% or More </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> 10% or More </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> 20% or More </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> 30% or More </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> 50% or More </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> 60% or More </span>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/slider/s4.jpg" alt="">
-          <div class="imageOverlay">
+          <div class="rating py-3">
+            <h5>Customer Review</h5>
+            <ul>
+              <li class="my-2">
+                <a href="#">
+                  <span> <i class="fa-solid fa-star ml-0"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span class="spanColor"> 5.0 </span>
+                </a>
+              </li>
 
-            <div class="imageOverlaySecond">
-              <p>Get flat <span> 10% </span> Cashback</p>
-              <h2>New <span> Standard </span> </h2>
-              <div><a href="#" class="">shop now</a></div>
-            </div>
+              <li class="my-2">
+                <a href="#">
+                  <span> <i class="fa-solid fa-star ml-0"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span class="spanColor"> 4.0 </span>
+                </a>
+              </li>
 
+              <li class="my-2">
+                <a href="#">
+                  <span> <i class="fa-solid fa-star ml-0"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star-half-stroke"></i> </span>
+                  <span class="spanColor"> 3.5 </span>
+                </a>
+              </li>
+
+              <li class="my-2">
+                <a href="#">
+                  <span> <i class="fa-solid fa-star ml-0"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span class="spanColor"> 3.0 </span>
+                </a>
+              </li>
+
+              <li class="my-2">
+                <a href="#">
+                  <span> <i class="fa-solid fa-star ml-0"></i> </span>
+                  <span> <i class="fa-solid fa-star"></i> </span>
+                  <span> <i class="fa-solid fa-star-half-stroke"></i> </span>
+                  <span class="spanColor"> 2.5 </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="electronics py-3">
+            <h5>discount</h5>
+            <ul>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Accessories </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Cameras & Photography </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Car & Vehicle Electronics </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Computers & Accessories </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> GPS & Accessories </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Headphones </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Home Audio </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Home Theater, TV & Video </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Mobiles & Accessories </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Portable Media Players </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" /> <span> Tablets </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Telephones & Accessories </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Wearable Technology </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="electronics py-3">
+            <h5>Cash On Delivery</h5>
+            <ul>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Eligible for Cash On Delivery </span>
+              </li>
+            </ul>
+          </div>
+          <div class="electronics py-3">
+            <h5>New Arrivals</h5>
+            <ul>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Last 30 Days </span>
+              </li>
+              <li>
+                <input class="checked" type="checkbox" />
+                <span> Last 90 Days </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Slider section end -->
+    <!--======================== Our Parallex Section Start ===============================-->
 
-  <!--======================== Our Product Section Start ===============================-->
-
-  <section class="py-5">
-    <div class="sectionMainHeading">
-      <h1> <span> O</span>ur <span> N</span>ew <span> P</span>roducts</h1>
-    </div>
-    <div class="divideSection">
-      <div class="leftSection">
-
-        <!--======================== Our Mobile Product Section Start ===============================-->
-
-        <h3 class="my-3">New Brand Mobiles</h3>
-        <div class="productSectionOne py-5 px-4">
-
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m1.jpg" alt="">
-                </picture>
-              </a>
+    <section>
+      <div class="parallex">
+        <div class="parallexOverlay">
+          <div class="parallexLeft py-3 px-3">
+            <div class="parallexContent">
+              <p class="parallexColor">Smooth, Rich & Loud Audio</p>
+              <h5>Branded Headphones</h5>
+              <p>Sale up to 25% off all in store</p>
             </div>
-
-            <div class="sectionProductImageOverlay">
-              <a href="" class="btn btn-danger">quick view</a>
-            </div>
-
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Samsung Galaxy J7</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$200.00</span> &nbsp; <del>$280.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
+            <div class="parallexImage">
+              <picture>
+                <img src="assets/images/sectionImages/banner/off1.png" alt="" />
+              </picture>
             </div>
           </div>
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m2.jpg" alt="">
-                </picture>
-              </a>
+          <div class="parallexLeft py-3 px-3">
+            <div class="parallexContent">
+              <p class="parallexColor">A Bigger Phone</p>
+              <h5>Smart Phones 5</h5>
+              <p>Free shipping order over $100</p>
             </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">OPPO A37f</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$230.00</span> &nbsp; <del>$250.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m3.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Apple iPhone X</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$200.00</span> &nbsp; <del>$280.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
+            <div class="parallexImage">
+              <picture>
+                <img src="assets/images/sectionImages/banner/off2.png" alt="" />
+              </picture>
             </div>
           </div>
         </div>
-
-        <!--======================== Our Mobile Product Section End ===============================-->
-
-
-        <!--======================== Our Electronics Product Section Start ===============================-->
-
-        <h3 class="my-5">Tv & Audio</h3>
-        <div class="productSectionOne py-5 px-4">
-
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m4.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Sony 80 cm (32 inches)</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$320.00</span> &nbsp; <del>$340.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m5.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Artis Speaker</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$349.00</span> &nbsp; <del>$399.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m6.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Philips Speakers</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$249.00</span> &nbsp; <del>$300.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--======================== Our Electronics Product Section End ===============================-->
-
-
-        <!--======================== Our Discount Banner Section Start ===============================-->
-
-
-
-        <div class="banner my-5 py-5 px-4">
-          <div class="bannerleft px-5">
-            <h3>Summer <br>
-              Carnival
-            </h3>
-            <p>Get Extra 10% Off</p>
-          </div>
-          <div class="bannerright">
-            <picture>
-              <img src="assets/images/sectionImages/banner/image1.png">
-            </picture>
-          </div>
-        </div>
-
-
-
-
-
-        <!--======================== Our Discount Banner Section End ===============================-->
-
-        <!--======================== Our Appliances Product Section Start ===============================-->
-
-
-        <h3 class="my-5">Large Appliances</h3>
-        <div class="productSectionOne py-5 px-4">
-
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m7.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Whirlpool 245</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$230.00</span> &nbsp; <del>$280.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m8.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">BPL Washing Machine</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$180.00</span> &nbsp; <del>$200.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-          <div class="productSectionItem">
-            <div class="sectionProductImage py-5">
-              <a href="#">
-                <picture>
-                  <img src="assets/images/sectionImages/mobile/m9.jpg" alt="">
-                </picture>
-              </a>
-            </div>
-            <div class="sectionProductImageOverlay">
-              <a href="#" class="btn btn-danger">quick view</a>
-            </div>
-            <div class="sectionProductInfo">
-              <h4>
-                <a href="#">Microwave Oven</a>
-              </h4>
-              <div class="sectionProductInfoPrice">
-                <span class="priceColor">$199.00</span> &nbsp; <del>$299.00</del>
-              </div>
-              <div class="sectionProductCart py-3">
-                <a href="#">Add To Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--======================== Our Appliances Product Section End ===============================-->
-
-
       </div>
-      <div class="rightSection px-3">
-        <div class="searchRight py-3">
-          <h5>Search Here.</h5>
+    </section>
+
+    <!--======================== Our Parallex Section End ===============================-->
+
+    <!--======================== Our Product Section End ===============================-->
+    <!--======================== Our Other Section Start ===============================-->
+
+    <div class="desc px-5 py-5">
+      <h3>Electronics :</h3>
+      <p>
+        If you're considering a new laptop, looking for a powerful new car
+        stereo or shopping for a new HDTV, we make it easy to find exactly what
+        you need at a price you can afford. We offer Every Day Low Prices on
+        TVs, laptops, cell phones, tablets and iPads, video games, desktop
+        computers, cameras and camcorders, audio, video and more.
+      </p>
+    </div>
+    <div class="deliverySection p-5">
+      <div class="shipping">
+        <div class="shippingIcon">
+          <i class="fa-solid fa-dolly"></i>
+        </div>
+        <div class="shippingInfo">
+          <h5>Free Shipping</h5>
+          <p>on orders over $100</p>
+        </div>
+      </div>
+      <div class="delivery">
+        <div class="shippingIcon">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="shippingInfo">
+          <h5>Fast Delivery</h5>
+          <p>World Wide</p>
+        </div>
+      </div>
+      <div class="choice">
+        <div class="shippingIcon">
+          <i class="fa-regular fa-thumbs-up"></i>
+        </div>
+        <div class="shippingInfo">
+          <h5>Big Choice</h5>
+          <p>of Products</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="">
+      <div class="footerMainSection my-5 px-5 py-5">
+        <div class="categories">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">TV, Audio</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Washing Machines</a></li>
+            <li><a href="#">Refrigerators</a></li>
+          </ul>
+        </div>
+
+        <div class="categories">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Faqs</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="categories">
+          <h4>Quick Links</h4>
+          <ul>
+            <li class="footerNoHover">
+              <a href="#"
+                ><i class="fa-solid fa-location-pin"></i>123 Sebastian, USA.</a
+              >
+            </li>
+            <li class="footerNoHover">
+              <a href="#"
+                ><i class="fa-solid fa-mobile-button"></i>333 222 3333</a
+              >
+            </li>
+            <li class="footerNoHover">
+              <a href="#"><i class="fa-solid fa-phone"></i>+222 11 4444 </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i> mail 1@example.com</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i> mail 2@example.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="categories">
+          <h4>Newsletter</h4>
+          <p>Free Delivery on your first order!</p>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Product Name" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"> Search </button>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Product Name"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Go</button>
           </form>
-        </div>
-        <div class="price py-3">
-          <h5>Price</h5>
-          <ul>
-            <li> <a href="#"> Under $1,000 </a> </li>
-            <li> <a href="#"> $1,000 - $5,000 </a> </li>
-            <li> <a href="#"> $5,000 - $10,000 </a> </li>
-            <li> <a href="#"> $10,000 - $20,000 </a> </li>
-            <li> <a href="#"> $20,000 $30,000 </a> </li>
-            <li> <a href="#"> Over $30,000 </a> </li>
-          </ul>
-        </div>
-        <div class="discount py-3">
-          <h5>discount</h5>
-          <ul>
-            <li> <input class="checked" type="checkbox"> <span> 5% or More </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> 10% or More </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> 20% or More </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> 30% or More </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> 50% or More </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> 60% or More </span> </li>
-          </ul>
-        </div>
-        <div class="rating py-3">
-          <h5>Customer Review</h5>
-          <ul>
-            <li class="my-2"> <a href="#">
-                <span> <i class="fa-solid fa-star ml-0"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span class="spanColor"> 5.0 </span>
-              </a> </li>
+          <h4 class="my-3">Follow Us on</h4>
+          <ul class="footerLinks my-3">
+            <li id="footerNavLinks">
+              <a
+                href="#"
+                class="footerAnchor"
+                style="
+                  height: 34px !important;
+                  width: 34px !important;
+                  display: inline-block !important;
+                  text-align: center !important;
+                  line-height: 34px !important;
+                  border-radius: 50% !important;
+                  background: #4867aa;
+                  font-size: 14px;
+                  margin: 0px 10px 0px 0px;
+                "
+              >
+                <i
+                  class="fa-brands fa-facebook"
+                  style="
+                    color: #fff;
+                    line-height: 34px;
+                    font-size: 1em;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    padding: 0;
+                  "
+                ></i>
+              </a>
+            </li>
 
-            <li class="my-2"> <a href="#">
-                <span> <i class="fa-solid fa-star ml-0"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span class="spanColor"> 4.0 </span>
-              </a> </li>
+            <li id="footerNavLinks">
+              <a
+                href="#"
+                class="footerAnchor"
+                style="
+                  height: 34px !important;
+                  width: 34px !important;
+                  display: inline-block !important;
+                  text-align: center !important;
+                  line-height: 34px !important;
+                  border-radius: 50% !important;
+                  background: #00acee;
+                  font-size: 14px;
+                  margin: 0px 10px 0px 0px;
+                "
+              >
+                <i
+                  class="fa-brands fa-twitter"
+                  style="
+                    color: #fff;
+                    line-height: 34px;
+                    font-size: 1em;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    padding: 0;
+                  "
+                ></i>
+              </a>
+            </li>
 
-            <li class="my-2"> <a href="#">
-                <span> <i class="fa-solid fa-star ml-0"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star-half-stroke"></i> </span>
-                <span class="spanColor"> 3.5 </span>
-              </a> </li>
-
-            <li class="my-2"> <a href="#">
-                <span> <i class="fa-solid fa-star ml-0"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span class="spanColor"> 3.0 </span>
-              </a> </li>
-
-            <li class="my-2"> <a href="#">
-                <span> <i class="fa-solid fa-star ml-0"></i> </span>
-                <span> <i class="fa-solid fa-star"></i> </span>
-                <span> <i class="fa-solid fa-star-half-stroke"></i> </span>
-                <span class="spanColor"> 2.5 </span>
-              </a> </li>
-
-          </ul>
-        </div>
-        <div class="electronics py-3">
-          <h5>discount</h5>
-          <ul>
-            <li> <input class="checked" type="checkbox"> <span> Accessories </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Cameras & Photography </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Car & Vehicle Electronics </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Computers & Accessories </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> GPS & Accessories </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Headphones </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Home Audio </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Home Theater, TV & Video </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Mobiles & Accessories </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Portable Media Players </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Tablets </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Telephones & Accessories </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Wearable Technology </span> </li>
-          </ul>
-        </div>
-
-        <div class="electronics py-3">
-          <h5>Cash On Delivery</h5>
-          <ul>
-            <li> <input class="checked" type="checkbox"> <span> Eligible for Cash On Delivery </span> </li>
-          </ul>
-        </div>
-        <div class="electronics py-3">
-          <h5>New Arrivals</h5>
-          <ul>
-            <li> <input class="checked" type="checkbox"> <span> Last 30 Days </span> </li>
-            <li> <input class="checked" type="checkbox"> <span> Last 90 Days </span> </li>
+            <li id="footerNavLinks">
+              <a
+                href="#"
+                class="footerAnchor"
+                style="
+                  height: 34px !important;
+                  width: 34px !important;
+                  display: inline-block !important;
+                  text-align: center !important;
+                  line-height: 34px !important;
+                  border-radius: 50% !important;
+                  background: #dd4b39;
+                  font-size: 14px;
+                  margin: 0px 10px 0px 0px;
+                "
+              >
+                <i
+                  class="fa-brands fa-google-plus"
+                  style="
+                    color: #fff;
+                    line-height: 34px;
+                    font-size: 1em;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    padding: 0;
+                  "
+                ></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!--======================== Our Parallex Section Start ===============================-->
-
-
-  <section>
-    <div class="parallex">
-    <div class="parallexOverlay">
-      <div class="parallexLeft py-3 px-3">
-        <div class="parallexContent">
-          <p class="parallexColor">Smooth, Rich & Loud Audio</p>
-          <h5>Branded Headphones</h5>
-          <p>Sale up to 25% off all in store</p>
+      <div class="footerMidSection px-5">
+        <div class="footerMidLinks">
+          <h3>Mobile & Tablets :</h3>
+          <ul>
+            <li><a href="#" style="padding-left: 0px">Android Phones</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#"> Feature Phones </a></li>
+            <li><a href="#">Unboxed Phones</a></li>
+            <li><a href="#"> Refurbished Phones </a></li>
+            <li><a href="#"> Tablets </a></li>
+            <li><a href="#"> CDMA Phones </a></li>
+            <li><a href="#"> Value Added Services</a></li>
+            <li><a href="#"> Sell Old </a></li>
+            <li><a href="#">Used Mobiles</a></li>
+          </ul>
         </div>
-        <div class="parallexImage">
-          <picture>
-            <img src="assets/images/sectionImages/banner/off1.png" alt="">
-          </picture>
+
+        <div class="footerMidLinks my-4">
+          <h3>Computers :</h3>
+          <ul>
+            <li><a href="#" style="padding-left: 0px">Laptops</a></li>
+            <li><a href="#">Printers</a></li>
+            <li><a href="#"> Routers </a></li>
+            <li><a href="#">Ink & Toner Cartridges</a></li>
+            <li><a href="#"> Monitors</a></li>
+            <li><a href="#"> Video Games </a></li>
+            <li><a href="#"> Unboxed & Refurbished Laptops </a></li>
+            <li><a href="#"> Assembled Desktops </a></li>
+            <li><a href="#"> Data Cards </a></li>
+          </ul>
+        </div>
+
+        <div class="footerMidLinks my-4">
+          <h3>TV, Audio & Large Appliances :</h3>
+          <ul>
+            <li><a href="#" style="padding-left: 0px">TVs & DTH</a></li>
+            <li><a href="#">Home Theatre Systems</a></li>
+            <li><a href="#"> Hidden Cameras & CCTVs </a></li>
+            <li><a href="#">Refrigerators</a></li>
+            <li><a href="#"> Washing Machines </a></li>
+            <li><a href="#"> Air Conditioners </a></li>
+            <li><a href="#"> Cameras </a></li>
+            <li><a href="#"> Speakers </a></li>
+          </ul>
+        </div>
+
+        <div class="footerMidLinks my-4">
+          <h3>Mobile & Laptop Accessories :</h3>
+          <ul>
+            <li><a href="#" style="padding-left: 0px">Headphones</a></li>
+            <li><a href="#">Power Banks</a></li>
+            <li><a href="#"> Backpacks </a></li>
+            <li><a href="#"> Mobile Cases & Covers </a></li>
+            <li><a href="#"> Pen Drives </a></li>
+            <li><a href="#"> External Hard Disks </a></li>
+            <li><a href="#"> Mouse </a></li>
+            <li><a href="#"> Smart Watches & Fitness Bands </a></li>
+            <li><a href="#"> MicroSD Cards </a></li>
+          </ul>
+        </div>
+
+        <div class="footerMidLinks my-4">
+          <h3>Appliances :</h3>
+          <ul>
+            <li><a href="#" style="padding-left: 0px">Trimmers</a></li>
+            <li><a href="#">Hair Dryers</a></li>
+            <li><a href="#"> Emergency Lights </a></li>
+            <li><a href="#"> Water Purifiers </a></li>
+            <li><a href="#"> Electric Kettles </a></li>
+            <li><a href="#"> Hair Straighteners </a></li>
+            <li><a href="#"> Induction Cooktops </a></li>
+            <li><a href="#"> Sewing Machines </a></li>
+            <li><a href="#"> Geysers </a></li>
+          </ul>
+        </div>
+
+        <div class="footerMidLinks my-4">
+          <h3>Popular on Electro Store :</h3>
+          <ul>
+            <li><a href="#" style="padding-left: 0px">Offers & Coupons</a></li>
+            <li><a href="#"> Couple Watches </a></li>
+            <li><a href="#"> Gas Stoves </a></li>
+            <li><a href="#"> Air Coolers </a></li>
+            <li><a href="#"> Air Purifiers </a></li>
+            <li><a href="#"> Headphones </a></li>
+            <li><a href="#"> Headsets </a></li>
+            <li><a href="#"> Pressure Cookers </a></li>
+            <li><a href="#"> Air Friers </a></li>
+            <li><a href="#"> Irons </a></li>
+            <li><a href="#"> LED TV </a></li>
+            <li><a href="#"> Sandwich Makers </a></li>
+          </ul>
+        </div>
+
+        <div class="footerMidLinks my-5">
+          <h3>Payment Method</h3>
+          <ul>
+            <li><img src="assets/images/payments/pay1.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay2.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay3.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay4.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay5.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay6.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay7.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay8.png" alt="" /></li>
+            <li><img src="assets/images/payments/pay9.png" alt="" /></li>
+          </ul>
         </div>
       </div>
-      <div class="parallexLeft py-3 px-3">
-        <div class="parallexContent">
-          <p class="parallexColor">A Bigger Phone</p>
-          <h5>Smart Phones 5</h5>
-          <p>Free shipping order over $100</p>
-        </div>
-        <div class="parallexImage">
-          <picture>
-            <img src="assets/images/sectionImages/banner/off2.png" alt="">
-          </picture>
-        </div>
+
+      <div class="footerLastSection px-5 py-4">
+        <p>
+          &copy; 2028 Electro Store. All rights reserved | design by Muhammad
+          Rehan
+        </p>
       </div>
-    </div>
-    </div>
-  </section>
+    </footer>
 
-  <!--======================== Our Parallex Section End ===============================-->
+    <button id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
 
-  <!--======================== Our Product Section End ===============================-->
-  <!--======================== Our Other Section Start ===============================-->
+    <!--======================== Our Other Section End ===============================-->
+  </body>
+  <script src="assets/js/layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    const exampleModal = document.getElementById("exampleModal");
+    if (exampleModal) {
+      exampleModal.addEventListener("show.bs.modal", (event) => {
+        // Button that triggered the modal
+        const button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        const recipient = button.getAttribute("data-bs-whatever");
+        // If necessary, you could initiate an Ajax request here
+        // and then do the updating in a callback.
 
-  <div class="desc px-5 py-5">
-    <h3>Electronics :</h3>
-    <p>If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it
-      easy to find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell
-      phones, tablets and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.</p>
-  </div>
-  <div class="deliverySection p-5">
-    <div class="shipping">
-      <div class="shippingIcon">
-        <i class="fa-solid fa-dolly"></i>
-      </div>
-      <div class="shippingInfo">
-        <h5>Free Shipping</h5>
-        <p>on orders over $100</p>
-      </div>
-    </div>
-    <div class="delivery ">
-      <div class="shippingIcon">
-        <i class="fa-solid fa-truck-fast"></i>
-      </div>
-      <div class="shippingInfo">
-        <h5>Fast Delivery</h5>
-        <p>World Wide</p>
-      </div>
-    </div>
-    <div class="choice">
-      <div class="shippingIcon">
-        <i class="fa-regular fa-thumbs-up"></i>
-      </div>
-      <div class="shippingInfo">
-        <h5>Big Choice</h5>
-        <p>of Products</p>
-      </div>
-    </div>
-  </div>
+        // Update the modal's content.
+        const modalTitle = exampleModal.querySelector(".modal-title");
+        const modalBodyInput = exampleModal.querySelector(".modal-body input");
 
-  <footer class="">
+        modalTitle.textContent = `New message to ${recipient}`;
+        modalBodyInput.value = recipient;
+      });
+    }
+    const myModal = document.getElementById("myModal");
+    const myInput = document.getElementById("myInput");
 
-
-    <div class="footerMainSection my-5 px-5 py-5">
-      <div class="categories">
-        <h4>Categories</h4>
-        <ul>
-          <li><a href="#">Mobiles</a></li>
-          <li><a href="#">Computers</a></li>
-          <li><a href="#">TV, Audio</a></li>
-          <li><a href="#">Smartphones</a></li>
-          <li><a href="#">Washing Machines</a></li>
-          <li><a href="#">Refrigerators</a></li>
-        </ul>
-      </div>
-
-      <div class="categories">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Faqs</a></li>
-          <li><a href="#">Terms of use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="categories">
-        <h4>Quick Links</h4>
-        <ul>
-          <li class="footerNoHover"><a href="#"><i class="fa-solid fa-location-pin"></i>123 Sebastian, USA.</a></li>
-          <li class="footerNoHover"><a href="#"><i class="fa-solid fa-mobile-button"></i>333 222 3333</a></li>
-          <li class="footerNoHover"><a href="#"><i class="fa-solid fa-phone"></i>+222 11 4444 </a></li>
-          <li><a href="#"><i class="fa-solid fa-envelope"></i> mail 1@example.com</a></li>
-          <li><a href="#"><i class="fa-solid fa-envelope"></i> mail 2@example.com</a></li>
-        </ul>
-      </div>
-
-      <div class="categories">
-        <h4>Newsletter</h4>
-        <p>Free Delivery on your first order!</p>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Product Name" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit"> Go </button>
-        </form>
-        <h4 class="my-3">Follow Us on</h4>
-        <ul class="footerLinks my-3">
-
-          <li id="footerNavLinks"><a href="#" class="footerAnchor" style="height: 34px !important; width: 34px !important;display: inline-block !important;text-align: center !important;line-height: 34px !important;border-radius: 50% !important;background: #4867aa;font-size: 14px;margin: 0px 10px 0px 0px;">
-              <i class="fa-brands fa-facebook" style="color: #fff;line-height: 34px;font-size: 1em;width: 34px;height: 34px;border-radius: 50%;padding: 0;"></i>
-            </a></li>
-
-          <li id="footerNavLinks"><a href="#" class="footerAnchor" style="height: 34px !important; width: 34px !important;display: inline-block !important;text-align: center !important;line-height: 34px !important;border-radius: 50% !important;background: #00ACEE;font-size: 14px;margin: 0px 10px 0px 0px;">
-              <i class="fa-brands fa-twitter" style="color: #fff;line-height: 34px;font-size: 1em;width: 34px;height: 34px;border-radius: 50%;padding: 0;"></i>
-            </a></li>
-
-          <li id="footerNavLinks"><a href="#" class="footerAnchor" style="height: 34px !important; width: 34px !important;display: inline-block !important;text-align: center !important;line-height: 34px !important;border-radius: 50% !important;background: #DD4B39;font-size: 14px;margin: 0px 10px 0px 0px;">
-              <i class="fa-brands fa-google-plus" style="color: #fff;line-height: 34px;font-size: 1em;width: 34px;height: 34px;border-radius: 50%;padding: 0;"></i>
-            </a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footerMidSection px-5">
-      <div class="footerMidLinks">
-        <h3>Mobile & Tablets :</h3>
-        <ul>
-          <li><a href="#" style="padding-left: 0px;">Android Phones</a></li>
-          <li><a href="#">Smartphones</a></li>
-          <li><a href="#">	Feature Phones </a></li>
-          <li><a href="#">Unboxed Phones</a></li>
-          <li><a href="#">	Refurbished Phones </a></li>
-          <li><a href="#">	Tablets </a></li>
-          <li><a href="#"> CDMA Phones </a></li>
-          <li><a href="#">	Value Added Services</a></li>
-          <li><a href="#">	Sell Old </a></li>
-          <li><a href="#">Used Mobiles</a></li>
-        </ul>
-      </div>
-
-      <div class="footerMidLinks my-4">
-        <h3>Computers :</h3>
-        <ul>
-          <li><a href="#" style="padding-left: 0px;">Laptops</a></li>
-          <li><a href="#">Printers</a></li>
-          <li><a href="#">	Routers </a></li>
-          <li><a href="#">Ink & Toner Cartridges</a></li>
-          <li><a href="#">	Monitors</a></li>
-          <li><a href="#">		Video Games  </a></li>
-          <li><a href="#"> Unboxed & Refurbished Laptops </a></li>
-          <li><a href="#">		Assembled Desktops </a></li>
-          <li><a href="#">	Data Cards </a></li>
-        </ul>
-      </div>
-
-      <div class="footerMidLinks my-4">
-        <h3>TV, Audio & Large Appliances :</h3>
-        <ul>
-          <li><a href="#" style="padding-left: 0px;">TVs & DTH</a></li>
-          <li><a href="#">Home Theatre Systems</a></li>
-          <li><a href="#">	Hidden Cameras & CCTVs </a></li>
-          <li><a href="#">Refrigerators</a></li>
-          <li><a href="#">		Washing Machines </a></li>
-          <li><a href="#">		Air Conditioners  </a></li>
-          <li><a href="#"> 	Cameras  </a></li>
-          <li><a href="#">			Speakers  </a></li>
-        </ul>
-      </div>
-
-      <div class="footerMidLinks my-4">
-        <h3>Mobile & Laptop Accessories :</h3>
-        <ul>
-          <li><a href="#" style="padding-left: 0px;">Headphones</a></li>
-          <li><a href="#">Power Banks</a></li>
-          <li><a href="#">		Backpacks  </a></li>
-          <li><a href="#">	Mobile Cases & Covers </a></li>
-          <li><a href="#">		Pen Drives </a></li>
-          <li><a href="#">		External Hard Disks  </a></li>
-          <li><a href="#"> 	Mouse  </a></li>
-          <li><a href="#">			Smart Watches & Fitness Bands  </a></li>
-          <li><a href="#">		MicroSD Cards </a></li>
-        </ul>
-      </div>
-
-      <div class="footerMidLinks my-4">
-        <h3>Appliances :</h3>
-        <ul>
-          <li><a href="#" style="padding-left: 0px;">Trimmers</a></li>
-          <li><a href="#">Hair Dryers</a></li>
-          <li><a href="#">			Emergency Lights   </a></li>
-          <li><a href="#">	Water Purifiers  </a></li>
-          <li><a href="#">		Electric Kettles </a></li>
-          <li><a href="#">		Hair Straighteners  </a></li>
-          <li><a href="#"> 		Induction Cooktops   </a></li>
-          <li><a href="#">			Sewing Machines  </a></li>
-          <li><a href="#">		Geysers </a></li>
-        </ul>
-      </div>
-
-      <div class="footerMidLinks my-4">
-        <h3>Popular on Electro Store :</h3>
-        <ul>
-          <li><a href="#" style="padding-left: 0px;">Offers & Coupons</a></li>
-          <li><a href="#">	Couple Watches </a></li>
-          <li><a href="#">			Gas Stoves   </a></li>
-          <li><a href="#">	Air Coolers  </a></li>
-          <li><a href="#">		Air Purifiers </a></li>
-          <li><a href="#">			Headphones   </a></li>
-          <li><a href="#"> 		Headsets   </a></li>
-          <li><a href="#">			Pressure Cookers   </a></li>
-          <li><a href="#">	Air Friers </a></li>
-          <li><a href="#">		Irons  </a></li>
-          <li><a href="#">		LED TV  </a></li>
-          <li><a href="#">	Sandwich Makers </a></li>
-        </ul>
-      </div>
-
-      <div class="footerMidLinks my-5">
-        <h3>Payment Method</h3>
-        <ul>
-          <li> <img src="assets/images/payments/pay1.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay2.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay3.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay4.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay5.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay6.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay7.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay8.png" alt=""> </li>
-          <li> <img src="assets/images/payments/pay9.png" alt=""> </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footerLastSection px-5 py-4">
-      <p>&copy; 2028 Electro Store. All rights reserved | design by Muhammad Rehan</p>
-    </div>
-
-  </footer>
-
-
-  <button id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
-
-
-  <!--======================== Our Other Section End ===============================-->
-</body>
-<script src="assets/js/layout.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
-<script>
-
- const exampleModal = document.getElementById('exampleModal')
-if (exampleModal) {
-  exampleModal.addEventListener('show.bs.modal', event => {
-    // Button that triggered the modal
-    const button = event.relatedTarget
-    // Extract info from data-bs-* attributes
-    const recipient = button.getAttribute('data-bs-whatever')
-    // If necessary, you could initiate an Ajax request here
-    // and then do the updating in a callback.
-
-    // Update the modal's content.
-    const modalTitle = exampleModal.querySelector('.modal-title')
-    const modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-    modalTitle.textContent = `New message to ${recipient}`
-    modalBodyInput.value = recipient
-  })
-}
- const myModal = document.getElementById('myModal')
-  const myInput = document.getElementById('myInput')
-  
-  myModal.addEventListener('shown.bs.modal', () => {
-    myInput.focus()
-  });
-  
-
-
-
-
-
-
-</script>
-
+    myModal.addEventListener("shown.bs.modal", () => {
+      myInput.focus();
+    });
+  </script>
 </html>

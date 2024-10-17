@@ -166,93 +166,180 @@ cursor: pointer
 
 
 
- /* =================== Our Slider Section CSS Start ========================= */
+/* =================== Our Slider Section CSS Start ========================= */
 
 .swiper {
-    width: 100%;
-    height: 100% !important;
+  width: 100%;
+  height: 100% !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  padding: 0px 100px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.imageOverlay>.imageOverlaySecond {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 2px rgba(2, 2, 2, 0.43);
+}
+
+.imageOverlay>.imageOverlaySecond>p {
+  font-size: 30px;
+  font-family: var(--child_family);
+  text-shadow: 3px 5px 2px rgb(12, 12, 12);
+  letter-spacing: 4px;
+}
+
+.imageOverlay>.imageOverlaySecond>p>span {
+  font-weight: 600;
+  font-family: var(--main_family);
+  font-size: 45px;
+}
+
+.imageOverlay>.imageOverlaySecond>h2 {
+  font-size: 70px;
+  font-family: var(--main_family);
+  text-shadow: 3px 8px 2px rgb(12, 12, 12);
+  letter-spacing: 4px;
+}
+
+.imageOverlay>.imageOverlaySecond>h2>span {
+  color: var(--text_warning);
+}
+
+.imageOverlay>.imageOverlaySecond>div>a {
+  background-color: var(--bg_color);
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.imageOverlay>.imageOverlaySecond>div>a:hover {
+  background-color: var(--bg_warning);
+  opacity: .8;
+}
+
+/* =================== Media Queries for Responsiveness =================== */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .imageOverlay {
+    padding: 0px 50px;
   }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  .imageOverlay>.imageOverlaySecond {
+    padding: 30px 30px;
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover;
+  .imageOverlay>.imageOverlaySecond>p {
+    font-size: 25px;
   }
 
-.imageOverlay{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    padding: 0px 100px;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
+  .imageOverlay>.imageOverlaySecond>p>span {
+    font-size: 35px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>h2 {
+    font-size: 50px;
+  }
 }
-.imageOverlay>.imageOverlaySecond{
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 50px 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    text-transform: capitalize;
-    border-radius: 5px;
-    box-shadow: 0px 2px 2px 2px rgba(2, 2, 2, 0.43);
-}
-.imageOverlay>.imageOverlaySecond>p{
-    font-size: 30px;
-    font-family: var(--child_family);
-    text-shadow: 3px 5px 2px rgb(12, 12, 12);
-    letter-spacing: 4px;
-}
-.imageOverlay>.imageOverlaySecond>p>span{
-    font-weight: 600;
-    font-family: var(--main_family);
-    font-size: 45px;
-}
-.imageOverlay>.imageOverlaySecond>h2{
-    font-size: 70px;
-    font-family: var(--main_family);
-    text-shadow: 3px 8px 2px rgb(12, 12, 12);
-    letter-spacing: 4px;
-}
-.imageOverlay>.imageOverlaySecond>h2>span{
-    color: var(--text_warning);
-}
-.imageOverlay>.imageOverlaySecond>div>a{
-    background-color: var(--bg_color);
-    padding: 10px 30px;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: white;
-    border-radius: 5px;
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .imageOverlay {
+    padding: 0px 20px;
+  }
+
+  .imageOverlay>.imageOverlaySecond {
+    padding: 20px 20px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>p {
+    font-size: 20px;
     letter-spacing: 2px;
-    display: block;
-    
-}
-.imageOverlay>.imageOverlaySecond>div>a:hover{
-    background-color: var(--bg_warning);
-    opacity: .8;
+  }
+
+  .imageOverlay>.imageOverlaySecond>p>span {
+    font-size: 30px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>h2 {
+    font-size: 40px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>div>a {
+    padding: 8px 20px;
+  }
 }
 
-  /* =================== Our Slider Section CSS End ========================= */
+/* Small Mobile view */
+@media (max-width: 480px) {
+  .imageOverlay {
+    padding: 0px 10px;
+  }
+
+  .imageOverlay>.imageOverlaySecond {
+    padding: 10px 10px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>p {
+    font-size: 18px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>p>span {
+    font-size: 25px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>h2 {
+    font-size: 30px;
+  }
+
+  .imageOverlay>.imageOverlaySecond>div>a {
+    padding: 5px 15px;
+  }
+}
+
+/* =================== Our Slider Section CSS End ========================= */
+
 
 
   /* =================== Our Product Section CSS Start ========================= */
